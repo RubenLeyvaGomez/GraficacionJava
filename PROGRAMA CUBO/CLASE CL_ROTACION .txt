@@ -1,0 +1,426 @@
+CLASE CL_ROTACION 
+  SECCION DE ATRIBUTOS 
+    forma: CL_CUBO, PRIVADO
+    angulo: ENTERO
+
+  SECCION DE METODOS 
+
+  METODO PUBLICO set_forma(x: CL_CUBO)
+  INICIO
+    forma <-- x
+  FIN METODO set_forma
+
+  METODO PUBLICO set_angulo(x: ENTERO)
+  INICIO 
+    angulo <-- x
+  FIN METODO set_angulo 
+
+  METODO PUBLICO get_forma: CL_CUBO
+  INICIO 
+    REGRESAR forma
+  FIN METODO get_forma
+
+  METODO PUBLICO get_angulo: ENTERO
+  INICIO 
+    REGRESAR angulo 
+  FIN METODO get_angulo
+
+  METODO PUBLICO rotacion_x
+    abs1: REAL
+    ord1: REAL
+    cota1: REAL
+    abs: ENTERO
+    ord: ENTERO
+    cota: ENTERO
+  INICIO 
+//PRIMER PUNTO
+    abs <-- forma.get_arista1.get_abscisa
+    ord <-- forma.get_arista1.get_ordenada
+    cota <-- forma.get_arista1.get_cota
+
+    ord1 <-- (ord*cos(angulo) + cota*sin(angulo)) 
+    ord <-- REDONDEAR(ord1)
+
+    cota1 <-- (ord*-sen(angulo) + cota*-cos(angulo))
+    cota <-- REDONDEAR(cota1)
+  
+    forma.set_arista1.set_abscisa(abs)
+    forma.set_arista1.set_ordenada(ord)
+    forma.set_arista1.set_cota(cota)
+
+//SEGUNDO PUNTO 
+    abs <-- forma.get_arista2.get_abscisa
+    ord <-- forma.get_arista2.get_ordenada
+    cota <-- forma.get_arista2.get_cota
+
+    ord1 <-- (ord*cos(angulo) + cota*sin(angulo)) 
+    ord <-- REDONDEAR(ord1)
+
+    cota1 <-- (ord*-sen(angulo) + cota*-cos(angulo))
+    cota <-- REDONDEAR(cota1)
+  
+    forma.set_arista2.set_abscisa(abs)
+    forma.set_arista2.set_ordenada(ord)
+    forma.set_arista2.set_cota(cota)
+
+//TERCER PUNTO 
+    abs <-- forma.get_arista3.get_abscisa
+    ord <-- forma.get_arista3.get_ordenada
+    cota <-- forma.get_arista3.get_cota
+
+    ord1 <-- (ord*cos(angulo) + cota*sin(angulo)) 
+    ord <-- REDONDEAR(ord1)
+
+    cota1 <-- (ord*-sen(angulo) + cota*-cos(angulo))
+    cota <-- REDONDEAR(cota1)
+  
+    forma.set_arista3.set_abscisa(abs)
+    forma.set_arista3.set_ordenada(ord)
+    forma.set_arista3.set_cota(cota)
+
+//CUARTO PUNTO 
+    abs <-- forma.get_arista4.get_abscisa
+    ord <-- forma.get_arista4.get_ordenada
+    cota <-- forma.get_arista4.get_cota
+
+    ord1 <-- (ord*cos(angulo) + cota*sin(angulo)) 
+    ord <-- REDONDEAR(ord1)
+
+    cota1 <-- (ord*-sen(angulo) + cota*-cos(angulo))
+    cota <-- REDONDEAR(cota1)
+  
+    forma.set_arista4.set_abscisa(abs)
+    forma.set_arista4.set_ordenada(ord)
+    forma.set_arista4.set_cota(cota)
+
+//QUINTO PUNTO 
+    abs <-- forma.get_arista5.get_abscisa
+    ord <-- forma.get_arista5.get_ordenada
+    cota <-- forma.get_arista5.get_cota
+
+    ord1 <-- (ord*cos(angulo) + cota*sin(angulo)) 
+    ord <-- REDONDEAR(ord1)
+
+    cota1 <-- (ord*-sen(angulo) + cota*-cos(angulo))
+    cota <-- REDONDEAR(cota1)
+  
+    forma.set_arista5.set_abscisa(abs)
+    forma.set_arista5.set_ordenada(ord)
+    forma.set_arista5.set_cota(cota)
+
+//SEXTO PUNTO
+    abs <-- forma.get_arista6.get_abscisa
+    ord <-- forma.get_arista6.get_ordenada
+    cota <-- forma.get_arista6.get_cota
+
+    ord1 <-- (ord*cos(angulo) + cota*sin(angulo)) 
+    ord <-- REDONDEAR(ord1)
+
+    cota1 <-- (ord*-sen(angulo) + cota*-cos(angulo))
+    cota <-- REDONDEAR(cota1)
+  
+    forma.set_arista6.set_abscisa(abs)
+    forma.set_arista6.set_ordenada(ord)
+    forma.set_arista6.set_cota(cota)
+
+//SEPTIMO PUNTO
+    abs <-- forma.get_arista7.get_abscisa
+    ord <-- forma.get_arista7.get_ordenada
+    cota <-- forma.get_arista7.get_cota
+
+    ord1 <-- (ord*cos(angulo) + cota*sin(angulo)) 
+    ord <-- REDONDEAR(ord1)
+
+    cota1 <-- (ord*-sen(angulo) + cota*-cos(angulo))
+    cota <-- REDONDEAR(cota1)
+  
+    forma.set_arista7.set_abscisa(abs)
+    forma.set_arista7.set_ordenada(ord)
+    forma.set_arista7.set_cota(cota)
+
+//OCTAVO PUNTO 
+    abs <-- forma.get_arista8.get_abscisa
+    ord <-- forma.get_arista8.get_ordenada
+    cota <-- forma.get_arista8.get_cota
+
+    ord1 <-- (ord*cos(angulo) + cota*sin(angulo)) 
+    ord <-- REDONDEAR(ord1)
+
+    cota1 <-- (ord*-sen(angulo) + cota*-cos(angulo))
+    cota <-- REDONDEAR(cota1)
+  
+    forma.set_arista8.set_abscisa(abs)
+    forma.set_arista8.set_ordenada(ord)
+    forma.set_arista8.set_cota(cota)
+
+  FIN METODO rotacion_x
+
+  METODO PUBLICO rotacion_y
+    abs1: REAL
+    ord1: REAL
+    cota1: REAL
+    abs: ENTERO
+    ord: ENTERO
+    cota: ENTERO
+  INICIO 
+  //PRIMER PUNTO 
+    abs <-- forma.get_arista1.get_abscisa
+    ord <-- forma.get_arista1.get_ordenada
+    cota <-- forma.get_arista1.get_cota
+
+    cota1 <-- (cota*cos(angulo) + abs*sen(angulo))
+    cota <-- REDONDEAR(cota1)
+
+    abs1 <-- (cota*-sen(angulo) + abs*-cos(angulo))
+    abs <-- REDONDEAR(abs1)
+
+    forma.set_arista1.set_abscisa(abs)
+    forma.set_arista1.set_ordenada(ord)
+    forma.set_arista1.set_cota(cota)
+
+//SEGUNDO PUNTO 
+    abs <-- forma.get_arista2.get_abscisa
+    ord <-- forma.get_arista2.get_ordenada
+    cota <-- forma.get_arista2.get_cota
+
+    cota1 <-- (cota*cos(angulo) + abs*sen(angulo))
+    cota <-- REDONDEAR(cota1)
+
+    abs1 <-- (cota*-sen(angulo) + abs*-cos(angulo))
+    abs <-- REDONDEAR(abs1)
+
+    forma.set_arista2.set_abscisa(abs)
+    forma.set_arista2.set_ordenada(ord)
+    forma.set_arista2.set_cota(cota)
+
+//TERCER PUNTO 
+    abs <-- forma.get_arista3.get_abscisa
+    ord <-- forma.get_arista3.get_ordenada
+    cota <-- forma.get_arista3.get_cota
+
+    cota1 <-- (cota*cos(angulo) + abs*sen(angulo))
+    cota <-- REDONDEAR(cota1)
+
+    abs1 <-- (cota*-sen(angulo) + abs*-cos(angulo))
+    abs <-- REDONDEAR(abs1)
+
+    forma.set_arista3.set_abscisa(abs)
+    forma.set_arista3.set_ordenada(ord)
+    forma.set_arista3.set_cota(cota)	
+
+//CUARTO PUNTO 
+    abs <-- forma.get_arista4.get_abscisa
+    ord <-- forma.get_arista4.get_ordenada
+    cota <-- forma.get_arista4.get_cota
+
+    cota1 <-- (cota*cos(angulo) + abs*sen(angulo))
+    cota <-- REDONDEAR(cota1)
+
+    abs1 <-- (cota*-sen(angulo) + abs*-cos(angulo))
+    abs <-- REDONDEAR(abs1)
+
+    forma.set_arista4.set_abscisa(abs)
+    forma.set_arista4.set_ordenada(ord)
+    forma.set_arista4.set_cota(cota)
+
+//QUINTO PUNTO 
+    abs <-- forma.get_arista5.get_abscisa
+    ord <-- forma.get_arista5.get_ordenada
+    cota <-- forma.get_arist5.get_cota
+
+    cota1 <-- (cota*cos(angulo) + abs*sen(angulo))
+    cota <-- REDONDEAR(cota1)
+
+    abs1 <-- (cota*-sen(angulo) + abs*-cos(angulo))
+    abs <-- REDONDEAR(abs1)
+
+    forma.set_arista5.set_abscisa(abs)
+    forma.set_arista5.set_ordenada(ord)
+    forma.set_arista5.set_cota(cota)
+
+//SEXTO PUNTO 
+    abs <-- forma.get_arista6.get_abscisa
+    ord <-- forma.get_arista6.get_ordenada
+    cota <-- forma.get_arista6.get_cota
+
+    cota1 <-- (cota*cos(angulo) + abs*sen(angulo))
+    cota <-- REDONDEAR(cota1)
+
+    abs1 <-- (cota*-sen(angulo) + abs*-cos(angulo))
+    abs <-- REDONDEAR(abs1)
+
+    forma.set_arista6.set_abscisa(abs)
+    forma.set_arista6.set_ordenada(ord)
+    forma.set_arista6.set_cota(cota)
+
+//SEPTIMO PUNTO 
+    abs <-- forma.get_arista7.get_abscisa
+    ord <-- forma.get_arista7.get_ordenada
+    cota <-- forma.get_arista7.get_cota
+
+    cota1 <-- (cota*cos(angulo) + abs*sen(angulo))
+    cota <-- REDONDEAR(cota1)
+
+    abs1 <-- (cota*-sen(angulo) + abs*-cos(angulo))
+    abs <-- REDONDEAR(abs1)
+
+    forma.set_arista7.set_abscisa(abs)
+    forma.set_arista7.set_ordenada(ord)
+    forma.set_arista7.set_cota(cota)
+
+//OCTAVO PUNTO
+
+    abs <-- forma.get_arista8.get_abscisa
+    ord <-- forma.get_arista8.get_ordenada
+    cota <-- forma.get_arista8.get_cota
+
+    cota1 <-- (cota*cos(angulo) + abs*sen(angulo))
+    cota <-- REDONDEAR(cota1)
+
+    abs1 <-- (cota*-sen(angulo) + abs*-cos(angulo))
+    abs <-- REDONDEAR(abs1)
+
+    forma.set_arista8.set_abscisa(abs)
+    forma.set_arista8.set_ordenada(ord)
+    forma.set_arista8.set_cota(cota)
+
+  FIN METODO rotacion_y
+
+  METODO PUBLICO rotacion_z
+    abs1: REAL
+    ord1: REAL
+    cota1: REAL
+    abs: ENTERO
+    ord: ENTERO
+    cota: ENTERO
+  INICIO 
+  //PRIMER PUNTO 
+    
+    abs <-- forma.get_arista1.get_abscisa
+    ord <-- forma.get_arista1.get_ordenada
+    cota <-- forma.get_arista1.get_cota
+
+    abs1 <-- (abs*cos(angulo) + ord*sen(angulo))
+    abs <-- REDONDEAR (abs1)
+
+    ord1 <-- (abs*-sen(angulo) + ord*-cos(angulo))
+    ord <-- REDONDEAR (ord1)
+
+    forma.set_arista1.set_abscisa(abs)
+    forma.set_arista1.set_ordenada(ord)
+    forma.set_arista1.set_cota(cota)
+
+//SEGUNDO PUNTO 
+
+    abs <-- forma.get_arista2.get_abscisa
+    ord <-- forma.get_arista2.get_ordenada
+    cota <-- forma.get_arista2.get_cota
+
+    abs1 <-- (abs*cos(angulo) + ord*sen(angulo))
+    abs <-- REDONDEAR (abs1)
+
+    ord1 <-- (abs*-sen(angulo) + ord*-cos(angulo))
+    ord <-- REDONDEAR (ord1)
+
+    forma.set_arista2.set_abscisa(abs)
+    forma.set_arista2.set_ordenada(ord)
+    forma.set_arista2.set_cota(cota)
+
+//TERCER PUNTO 
+
+    abs <-- forma.get_arista3.get_abscisa
+    ord <-- forma.get_arista3.get_ordenada
+    cota <-- forma.get_arista3.get_cota
+
+    abs1 <-- (abs*cos(angulo) + ord*sen(angulo))
+    abs <-- REDONDEAR (abs1)
+
+    ord1 <-- (abs*-sen(angulo) + ord*-cos(angulo))
+    ord <-- REDONDEAR (ord1)
+
+    forma.set_arista3.set_abscisa(abs)
+    forma.set_arista3.set_ordenada(ord)
+    forma.set_arista3.set_cota(cota)
+
+//CUARTO PUNTO 
+
+    abs <-- forma.get_arista4.get_abscisa
+    ord <-- forma.get_arista4.get_ordenada
+    cota <-- forma.get_arista4.get_cota
+
+    abs1 <-- (abs*cos(angulo) + ord*sen(angulo))
+    abs <-- REDONDEAR (abs1)
+
+    ord1 <-- (abs*-sen(angulo) + ord*-cos(angulo))
+    ord <-- REDONDEAR (ord1)
+
+    forma.set_arista4.set_abscisa(abs)
+    forma.set_arista4.set_ordenada(ord)
+    forma.set_arista4.set_cota(cota)
+
+//QUINTO PUNTO 
+
+    abs <-- forma.get_arista5.get_abscisa
+    ord <-- forma.get_arista5.get_ordenada
+    cota <-- forma.get_arista5.get_cota
+
+    abs1 <-- (abs*cos(angulo) + ord*sen(angulo))
+    abs <-- REDONDEAR (abs1)
+
+    ord1 <-- (abs*-sen(angulo) + ord*-cos(angulo))
+    ord <-- REDONDEAR (ord1)
+
+    forma.set_arista5.set_abscisa(abs)
+    forma.set_arista5.set_ordenada(ord)
+    forma.set_arista5.set_cota(cota)
+
+//SEXTO PUNTO 
+
+    abs <-- forma.get_arista6.get_abscisa
+    ord <-- forma.get_arista6.get_ordenada
+    cota <-- forma.get_arista6.get_cota
+
+    abs1 <-- (abs*cos(angulo) + ord*sen(angulo))
+    abs <-- REDONDEAR (abs1)
+
+    ord1 <-- (abs*-sen(angulo) + ord*-cos(angulo))
+    ord <-- REDONDEAR (ord1)
+
+    forma.set_arista6.set_abscisa(abs)
+    forma.set_arista6.set_ordenada(ord)
+    forma.set_arista6.set_cota(cota)
+
+//SEPTIMO PUNTO 
+
+    abs <-- forma.get_arista7.get_abscisa
+    ord <-- forma.get_arista7.get_ordenada
+    cota <-- forma.get_arista7.get_cota
+
+    abs1 <-- (abs*cos(angulo) + ord*sen(angulo))
+    abs <-- REDONDEAR (abs1)
+
+    ord1 <-- (abs*-sen(angulo) + ord*-cos(angulo))
+    ord <-- REDONDEAR (ord1)
+
+    forma.set_arista7.set_abscisa(abs)
+    forma.set_arista7.set_ordenada(ord)
+    forma.set_arista7.set_cota(cota)
+
+//OCTAVO PUNTO 
+    abs <-- forma.get_arista8.get_abscisa
+    ord <-- forma.get_arista8.get_ordenada
+    cota <-- forma.get_arista8.get_cota
+
+    abs1 <-- (abs*cos(angulo) + ord*sen(angulo))
+    abs <-- REDONDEAR (abs1)
+
+    ord1 <-- (abs*-sen(angulo) + ord*-cos(angulo))
+    ord <-- REDONDEAR (ord1)
+
+    forma.set_arista8.set_abscisa(abs)
+    forma.set_arista8.set_ordenada(ord)
+    forma.set_arista8.set_cota(cota)
+
+  FIN METODO rotacion_z
+
+FIN CLASE CL_ROTACION

@@ -1,0 +1,309 @@
+CLASE CL_CUBO DERIVADA DE CL_TRAZADOR
+  SECCION DE ATRIBUTOS 
+    longitud: ENTERO, PRIVADO
+    arista1: CL_PUNTO3D, PRIVADO
+    arista2: CL_PUNTO3D, PRIVADO
+    arista3: CL_PUNTO3D, PRIVADO
+    arista4: CL_PUNTO3D, PRIVADO
+    arista5: CL_PUNTO3D, PRIVADO
+    arista6: CL_PUNTO3D, PRIVADO
+    arista7: CL_PUNTO3D, PRIVADO
+    arista8: CL_PUNTO3D, PRIVADO
+    ar1: CL_PUNTO, PRIVADO
+    ar2: CL_PUNTO, PRIVADO
+    ar3: CL_PUNTO, PRIVADO
+    ar4: CL_PUNTO, PRIVADO
+    ar5: CL_PUNTO, PRIVADO
+    ar6: CL_PUNTO, PRIVADO
+    ar7: CL_PUNTO, PRIVADO
+    ar8: CL_PUNTO, PRIVADO
+
+  SECCION DE MÉTODOS 
+
+  METODO PUBLICO set_longitud(x: ENTERO)
+  INICIO 
+    longitud <-- x
+  FIN METODO set_longitud
+
+  METODO PUBLICO set_arista1(x: CL_PUNTO3D)
+  INICIO 
+    arista1 <-- x
+  FIN METODO set_arista1
+
+  METODO PUBLICO set_arista2(x: CL_PUNTO3D)
+  INICIO 
+    arista2 <-- x
+  FIN METODO set_arista2
+
+  METODO PUBLICO set_arista3(x: CL_PUNTO3D)
+  INICIO 
+    arista3 <-- x
+  FIN METODO set_arista3
+
+  METODO PUBLICO set_arista4(x: CL_PUNTO3D)
+  INICIO 
+    arista4 <-- x
+  FIN METODO set_arista4
+
+  METODO PUBLICO set_arista4(x: CL_PUNTO3D)
+  INICIO 
+    arista4 <-- x
+  FIN METODO set_arista4
+
+  METODO PUBLICO set_arista5(x: CL_PUNTO3D)
+  INICIO 
+    arista5 <-- x
+  FIN METODO set_arista5
+
+  METODO PUBLICO set_arista6(x: CL_PUNTO3D)
+  INICIO 
+    arista6 <-- x
+  FIN METODO set_arista6
+
+  METODO PUBLICO set_arista7(x: CL_PUNTO3D)
+  INICIO 
+    arista7 <-- x
+  FIN METODO set_arista7
+
+  METODO PUBLICO set_arista8(x: CL_PUNTO3D)
+  INICIO 
+    arista8 <-- x
+  FIN METODO set_arista8
+
+  METODO PUBLICO set_ar1(x: CL_PUNTO)
+  INICIO 
+    ar1 <-- x
+  FIN METODO set_ar1
+
+  METODO PUBLICO set_ar2(x: CL_PUNTO)
+  INICIO 
+    ar2 <-- x
+  FIN METODO set_ar2
+
+  METODO PUBLICO set_ar3(x: CL_PUNTO)
+  INICIO 
+    ar3 <-- x
+  FIN METODO set_ar3
+
+  METODO PUBLICO set_ar4(x: CL_PUNTO)
+  INICIO 
+    ar4 <-- x
+  FIN METODO set_ar4
+
+  METODO PUBLICO set_ar5(x: CL_PUNTO)
+  INICIO 
+    ar5 <-- x
+  FIN METODO set_ar5
+
+  METODO PUBLICO set_ar6(x: CL_PUNTO)
+  INICIO 
+    ar6 <-- x
+  FIN METODO set_ar6
+
+  METODO PUBLICO set_ar7(x: CL_PUNTO)
+  INICIO 
+    ar7 <-- x
+  FIN METODO set_ar7
+
+  METODO PUBLICO set_ar8(x: CL_PUNTO)
+  INICIO 
+    ar8 <-- x
+  FIN METODO set_ar8
+
+  METODO PUBLICO get_longitud: ENTERO 
+  INICIO 
+    REGRESAR longitud
+  FIN METODO get_longitud
+
+  METODO PUBLICO get_arista1: CL_PUNTO3D
+  INICIO
+    REGRESAR arista1
+  FIN METODO get_arista1
+
+  METODO PUBLICO get_arista2: CL_PUNTO3D
+  INICIO
+    REGRESAR arista2
+  FIN METODO get_arista2
+
+  METODO PUBLICO get_arista3: CL_PUNTO3D
+  INICIO
+    REGRESAR arista3
+  FIN METODO get_arista3
+
+  METODO PUBLICO get_arista4: CL_PUNTO3D
+  INICIO
+    REGRESAR arista4
+  FIN METODO get_arista4
+
+  METODO PUBLICO get_arista5: CL_PUNTO3D
+  INICIO
+    REGRESAR arista5
+  FIN METODO get_arista5
+
+  METODO PUBLICO get_arista6: CL_PUNTO3D
+  INICIO
+    REGRESAR arista6
+  FIN METODO get_arista6
+
+  METODO PUBLICO get_arista6: CL_PUNTO3D
+  INICIO
+    REGRESAR arista6
+  FIN METODO get_arista6
+
+  METODO PUBLICO get_arista7: CL_PUNTO3D
+  INICIO
+    REGRESAR arista7
+  FIN METODO get_arista7
+
+  METODO PUBLICO get_arista8: CL_PUNTO3D
+  INICIO
+    REGRESAR arista8
+  FIN METODO get_arista8
+
+  METODO PUBLICO get_ar1: CL_PUNTO
+  INICIO 
+    REGRESAR ar1
+  FIN METODO get_ar1
+
+  METODO PUBLICO get_ar2: CL_PUNTO
+  INICIO 
+    REGRESAR ar2
+  FIN METODO get_ar2
+
+  METODO PUBLICO get_ar3: CL_PUNTO
+  INICIO 
+    REGRESAR ar3
+  FIN METODO get_ar3
+
+  METODO PUBLICO get_ar4: CL_PUNTO
+  INICIO 
+    REGRESAR ar4
+  FIN METODO get_ar4
+
+  METODO PUBLICO get_ar4: CL_PUNTO
+  INICIO 
+    REGRESAR ar4
+  FIN METODO get_ar4
+
+  METODO PUBLICO get_ar5: CL_PUNTO
+  INICIO 
+    REGRESAR ar5
+  FIN METODO get_ar5
+
+  METODO PUBLICO get_ar6: CL_PUNTO
+  INICIO 
+    REGRESAR ar6
+  FIN METODO get_ar6
+
+  METODO PUBLICO get_ar7: CL_PUNTO
+  INICIO 
+    REGRESAR ar7
+  FIN METODO get_ar7
+
+  METODO PUBLICO get_ar8: CL_PUNTO
+  INICIO 
+    REGRESAR ar8
+  FIN METODO get_ar8
+
+  METODO PUBLICO CL_CUBO(a1, a2, a3, a4, a5, a6, a7, a8: CL_PUNTO3D, x1, y1, lon: ENTERO, ari1, ari2, ari3, ari4, ari5, ari6, ari7, ari8: CL_PUNTO, ag: REAL)
+  INICIO 
+    arista1 <-- a1
+    arista2 <-- a2
+    arista3 <-- a3
+    arista4 <-- a4
+    arista5 <-- a5
+    arista6 <-- a6
+    arista7 <-- a7
+    arista8 <-- a8
+    longitud <-- lon
+    ar1 <-- ari1
+    ar2 <-- ari2
+    ar3 <-- ari3
+    ar4 <-- ari4
+    ar5 <-- ari5
+    ar6 <-- ari6
+    ar7 <-- ari7
+    ar8 <-- ari8
+ 
+    arista1.set_angulo(ag)
+    arista1.set_abscisa(0)
+    arista1.set_ordenada(0)
+    arista1.set_cota(0)
+    ar1 <-- arista1.2d_to_3d
+    ar1.geo_to_graf(x1,y1: ENTERO)
+ 
+    arista2.set_angulo(ag)
+    arista2.set_abscisa(0)
+    arista2.set_ordenada(longitud)
+    arista2.set_cota(0)
+    ar2 <-- arista2.2d_to_3d
+    ar2.geo_to_graf(x1,y1: ENTERO)
+
+    arista3.set_angulo(ag)
+    arista3.set_abscisa(longitud)
+    arista3.set_ordenada(longitud)
+    arista3.set_cota(0)
+    ar3 <-- arista3.2d_to_3d
+    ar3.geo_to_graf(x1,y1: ENTERO)
+
+    arista4.set_angulo(ag)
+    arista4.set_abscisa(longitud)
+    arista4.set_ordenada(0)
+    arista4.set_cota(0)
+    ar4 <-- arista4.2d_to_3d
+    ar4.geo_to_graf(x1, y1: ENTERO)
+
+    arista5.set_angulo(ag)
+    arista5.set_abscisa(0)
+    arista5.set_ordenada(0)
+    arista5.set_cota(longitud)
+    ar5 <-- arista4.2d_to_3d
+    ar5.geo_to_graf(x1, y1: ENTERO)
+
+    arista6.set_angulo(ag)
+    arista6.set_abscisa(longitud)
+    arista6.set_ordenada(0)
+    arista6.set_cota(longitud)
+    ar6 <-- arista6.2d_to_3d
+    ar6.geo_to_graf(x1,y1: ENTERO)
+
+    arista7.set_angulo(ag)
+    arista7.set_abscisa(longitud)
+    arista7.set_ordenada(longitud)
+    arista7.set_cota(longitud)
+    ar7 <-- arista7.2d_to_3d
+    ar7.geo_to_graf(x1,y1: ENTERO)
+   
+    arista8.set_angulo(ag)
+    arista8.set_abscisa(0)
+    arista8.set_ordenada(longitud)
+    arista8.set_cota(longitud)
+    ar8 <-- arista8.2d_to_3d
+    ar8.geo_to_graf(x1,y1: ENTERO)
+
+  FIN METODO CL_CUBO
+  
+  METODO PUBLICO dibuja
+  INICIO 
+
+//PRIMER CUADRO
+    dibuja_linea(ar1.get_abscisa, ar1.get_ordenada, ar2.get_abscisa, ar2.get_ordenada)
+    dibuja_linea(ar2.get_abscisa, ar2.get_ordenada, ar3.get_abscisa, ar3.get_ordenada)
+    dibuja_linea(ar3.get_abscisa, ar3.get_ordenada, ar4.get_abscisa, ar4.get_ordenada)
+    dibuja_linea(ar4.get_abscisa, ar4.get_ordenada, ar1.get_abscisa, ar1.get_ordenada)
+
+//SEGUNDO CUADRO
+    dibuja_linea(ar5.get_abscisa, ar5.get_ordenada, ar6.get_abscisa, ar6.get_ordenada)
+    dibuja_linea(ar6.get_abscisa, ar6.get_ordenada, ar7.get_abscisa, ar7.get_ordenada)
+    dibuja_linea(ar7.get_abscisa, ar7.get_ordenada, ar8.get_abscisa, ar8.get_ordenada)
+    dibuja_linea(ar8.get_abscisa, ar8.get_ordenada, ar5.get_abscisa, ar5.get_abscisa)
+
+//FORMACION DEL CUBO
+    dibuja_linea(ar1.get_abscisa, ar1.get_ordenada, ar5.get_abscisa, ar5.get_ordenada)
+    dibuja_linea(ar2.get_abscisa, ar2.get_ordenada, ar8.get_abscisa, ar8.get_ordenada)
+    dibuja_linea(ar3.get_abscisa, ar3.get_ordenada, ar7.get_abscisa, ar7.get_ordenada)
+    dibuja_linea(ar4.get_abscisa, ar4.get_ordenada, ar6.get_abscisa, ar6.get_ordenada)
+
+  FIN METODO dibuja
+
+FIN CLASE CL_CUBO

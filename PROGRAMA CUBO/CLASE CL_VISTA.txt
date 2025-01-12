@@ -1,0 +1,38 @@
+CLASE CL_VISTA
+INICIO
+SECCIÓN DE ATRIBUTOS
+  entrada: CADENA,PRIVADO
+  salida: CADENA,PRIVADO 
+SECCIÓN DE METODOS 
+
+  METODO PUBLICO set_entrada (x: CADENA)
+  INICIO 
+     x <-- entrada
+  FIN METODO set_entrada
+
+  METODO PUBLICO set_salida (x: CADENA)
+  INICIO 
+    x <-- salida 
+  FIN METODO set_salida 
+
+  METODO PUBLICO get_entrada: CADENA  
+  INICIO 
+    REGRESA entrada 
+  FIN METODO get_entrada
+
+  METODO PUBLICO get_salida: CADENA 
+  INICIO 
+    REGRESA salida 
+  FIN METODO get_salida
+
+  METODO PÚBLICO mostrar
+  INICIO 
+    ESCRIBE salida
+  FIN METODO mostrar
+  
+  MÉTODO PÚBLICO recibir
+  INICIO
+    LEER (entrada)
+  FIN MÉTODO recibir
+
+FIN CLASE CL_VISTA

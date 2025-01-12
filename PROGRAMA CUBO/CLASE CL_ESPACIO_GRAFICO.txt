@@ -1,0 +1,56 @@
+CLASE CL_ESPACIO_GRAFICO EXTENSION DE JFrame 
+INICIO 
+SECCION DE ATRIBUTOS 
+  ancho: ENTERO, PRIVADO
+  alto: ENTERO, PRIVADO
+  panel: JPANEL, PRIVADO
+  trazador: CL_TRAZADOR, PRIVADO
+SECCION DE METODOS 
+
+  METODO PUBLICO set_ancho(x: ENTERO)
+  INICIO 
+    x <-- ancho
+  FIN METODO set_ancho
+
+  METODO PUBLICO set_alto(x: ENTERO)
+  INICIO
+    x <-- alto
+  FIN METODO set_alto
+
+  METODO PUBLICO get_alto: ENTERO
+  INICIO 
+    REGRESAR alto
+  FIN METODO get_alto
+  
+  METODO PUBLICO get_ancho: ENTERO
+  INICIO
+    REGRESAR ancho
+  FIN METODO get_ancho
+
+  METODO PUBLICO CL_ESPACIO_GRAFICO(w,h: ENTERO)
+  INICIO 
+    ModoGrafico
+    AreaGrafica(1,1,w,h)
+  FIN METODO CL_ESPACIO_GRAFICO
+
+  METODO PUBLICO dibujar_punto(punto: CL_PUNTO)
+  INICIO 
+    colocar_pixel(punto.get_abscisa,punto.get_ordenada)
+  FIN METODO dibujar_punto
+
+  METODO PUBLICO dibujar_linea(linea: CL_LINEA)
+  INICIO 
+    colocar_linea(linea.get_p_inicial,linea.get_p_final)
+  FIN METODO dibujar_linea
+
+  METODO PUBLICO dibuja_espacio_geometrico3D(x: CL_ESPACIO_GEOMETRICO)
+  INICIO 
+
+  FIN METODO dibuja_espacio_geometrico3D
+
+  METODO PUBLICO dibuja_grafica(x: CL_GRAFICARXY)
+  INICIO 
+
+  FIN METODO dibuja_puntos
+
+FIN CLASE CL_ESPACIO_GRAFICO

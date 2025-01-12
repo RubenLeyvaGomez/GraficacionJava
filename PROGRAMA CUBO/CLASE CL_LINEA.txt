@@ -1,0 +1,38 @@
+CLASE CL_LINEA 
+  SECCION DE ATRIBUTOS 
+    p_inicial: CL_PUNTO, PRIVADO
+    p_final: CL_PUNTO,PRIVADO 
+
+  SECCION DE MÉTODOS 
+
+  METODO PUBLICO set_p_inicial(x: CL_PUNTO)
+  INICIO 
+    p_inicial <-- x
+  FIN METODO set_pInicial
+
+  METODO PUBLICO set_p_final(x: CL_PUNTO)
+  INICIO 
+    p_final <-- x 
+  FIN METODO set_pFinal
+
+  METODO PUBLICO get_p_inicial: CL_PUNTO
+  INICIO 
+    REGRESAR p_inicial
+  FIN METODO get_pInicial
+
+  METODO PUBLICO get_p_inal: CL_PUNTO 
+  INICIO 
+    REGRESAR p_final
+  FIN METODO get_pFinal
+
+  METODO PUBLICO CL_LINEA(pi,pf: CL_PUNTO)
+  INICIO 
+    p_inicial <-- pi
+    p_iinal <-- pf
+  FIN METODO CL_LINEA 
+
+  METODO PUBLICO dibujar
+  INICIO 
+  FIN METODO dibujar
+
+FIN CLASE CL_LINEA

@@ -1,0 +1,85 @@
+CLASE CL_PUNTO3D 
+  SECCION DE ATRIBUTOS 
+    abscisa: ENTERO, PRIVADO
+    ordenada: ENTERO, PRIVADO
+    cota: ENTERO, PRIVADO 
+    angulo: REAL, PRIVADO
+
+  SECCION DE METODOS 
+
+  METODO PUBLICO set_abscisa(x: ENTERO)
+  INICIO 
+    abscisa <-- x
+  FIN METODO PUBLICO set_abscisa
+
+  METODO PUBLICO set_ordenada(x: ENTERO)
+  INICIO 
+    ordenada <-- x
+  FIN METODO PUBLICO set_ordenada
+
+  METODO PUBLICO set_cota(x: ENTERO)
+  INICIO 
+    cota <-- x
+  FIN METODO set_cota
+
+  METODO PUBLICO set_angulo(x: REAL)
+  INICIO 
+    angulo <-- x
+  FIN METODO set_angulo
+
+  METODO PUBLICO get_abscisa: ENTERO
+  INICIO 
+    REGRESAR abscisa
+  FIN METODO get_abscisa
+
+  METODO PUBLICO get_ordenada: ENTERO
+  INICIO 
+    REGRESAR ordenada
+  FIN METODO get_ordenada
+
+  METODO PUBLICO get_cota: ENTERO
+  INICIO 
+    REGRESAR cota 
+  FIN METODO get_cota
+
+  METODO PUBLICO get_angulo: REAL
+  INICIO 
+    REGRESAR angulo
+  FIN METODO get_angulo
+
+  METODO PUBLICO 2d_to_3d
+  SECCION DE VARIABLES
+    m1: REAL 
+    n1: REAL
+    m: ENTERO
+    n: ENTERO
+    abs: ENTERO
+    ord: ENTERO
+  INICIO 
+    m1 <-- cota*cos(angulo)
+    n1 <-- cota*sen(angulo)
+    m <-- redondear(m1)
+    n <-- redondear(n1)
+    
+    mipunto2d OBJETO DE CL_PUNTO
+
+    abs <-- m + abscisa
+    ord <-- n + ordenada
+    
+    mipunto2d.set_abscisa(abs)
+    mipunto2d.set_ordenada(ord)
+
+    REGRESAR mipunto2d
+
+  FIN METODO 2d_to_3d
+
+  METODO PUBLICO CL_PUNTO3D(abs, ord, cota: ENTERO)
+  INICIO 
+  abscisa <-- abs
+  ordenada <-- ord
+  cota <-- cota
+
+  FIN METODO CL_PUNTO3D
+
+
+FIN CLASE CL_PUNTO3D

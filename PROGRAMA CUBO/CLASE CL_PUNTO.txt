@@ -1,0 +1,42 @@
++++++++++++++++CLASE CL_PUNTO DERIVADA DE CL_TRAZADOR
+INICIO
+SECCION DE ATRIBUTOS
+   abscisa: ENTERO,PRIVADO
+   ordenada: ENTERO,PRIVADO
+SECCIÓN DE MÉTODOS
+    MÉTODO PÚBLICO set_absisa (x: ENTERO)
+  INICIO 
+     abscisa <-- x
+  FIN MÉTODO set_absisa
+
+  MÉTODO PÚBLICO set_ordenada (x: ENTERO)
+  INICIO 
+    ordenada <-- x 
+  FIN MÉTODO set_ordenada 
+
+  MÉTODO PÚBLICO get_abscisa: ENTERO
+  INICIO 
+    REGRESA absisa 
+  FIN MÉTODO get_absisa
+
+  MÉTODO PÚBLICO get_ordenada: ENTERO 
+  INICIO 
+    REGRESA ordenada 
+  FIN MÉTODO get_ordenada
+
+ MÉTODO PÚBLICO CL_PUNTO(x,y: ENTERO)
+  absisa <-- x
+  ordenada <-- y
+FIN MÉTODO CL_PUNTO
+
+ MÉTODO PÚBLICO geo_to_graf(x1,y1: ENTERO)
+  INICIO 
+    abscisa <-- x1 + abscisa
+    ordenada <-- y1 - ordenada
+ FIN METODO geo_to_graf
+ 
+ MÉTODO dibujar
+ INICIO
+ FIN METODO dibujar
+
+FIN CLASE CL_PUNTO
